@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    android:useLevel="false" >
+
+    <!--
+    shape取值有四种，可以是rectangle（长方形），oval（椭圆），line（线条），ring（圆环），如果不设置的话默认是长方形，只有当我们要画的图形是ring的时候，下面这几个属性才会生效：
+        1.android:innerRadius：内环的半径。
+        2.android:innerRadiusRatio：内环的比例，比如这个值为2，那么内环的半径就为环半径除以2，如果设置了第一个属性，则这个属性不起作用。
+        3.android:thickness：环的厚度。
+        4.android:thicknessRatio：环的厚度比例，比如这个值为2，那么环的厚度就为环半径除以2，如果设置了第三个属性，则这个属性不起作用。
+        5.android:useLevel：只有当我们的shape使用在LevelListDrawable中的时候，这个值为true，否则为false。
+    -->
+
+    <padding
+        android:left="2dp"
+        android:top="1dp"
+        android:right="2dp"
+        android:bottom="1dp" />
+
+    <solid
+        android:color="#F00" />
+
+    <size android:width="15dp"
+        android:height="15dp" />
+
+</shape>
