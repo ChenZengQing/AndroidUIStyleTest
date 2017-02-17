@@ -1,177 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ccc"
+    android:orientation="vertical"
     tools:context="com.ui.test.androiduistyletest.MainActivity">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="shape"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="5dp"
+        android:onClick="goToShape"
+        android:background="@drawable/rounded_rectangle_gradient_background"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SELECTOR"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="5dp"
+        android:onClick="goToSelector"
+        android:background="@drawable/rounded_rectangle_gradient_background"/>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#FFF"
-                android:padding="5dp"
-                android:textColor="#000"
-                android:textSize="12sp"
-                android:text="纯色无边框背景"/>
-
-            <TextView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="10dp"
-                android:gravity="center"
-                android:background="@drawable/circle_background"
-                android:text="Hello World!" />
-
-            <TextView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="10dp"
-                android:gravity="center"
-                android:background="@drawable/circular_ring_background"
-                android:text="Hello World!" />
-
-            <TextView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="10dp"
-                android:gravity="center"
-                android:background="@drawable/rounded_rectangle_background"
-                android:text="Hello World!" />
-
-            <TextView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="10dp"
-                android:gravity="center"
-                android:background="@drawable/rounded_rectangle_left_top_background"
-                android:text="Hello World!" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:background="@drawable/line_imaginary_background" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:background="@drawable/line_background" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#FFF"
-                android:padding="5dp"
-                android:layout_marginTop="5dp"
-                android:textColor="#000"
-                android:textSize="12sp"
-                android:text="纯色带边框背景"/>
-
-            <TextView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="10dp"
-                android:gravity="center"
-                android:background="@drawable/circle_boder_background"
-                android:text="Hello World!" />
-
-            <TextView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="10dp"
-                android:gravity="center"
-                android:background="@drawable/circular_ring_boder_background"
-                android:text="Hello World!" />
-
-            <TextView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="10dp"
-                android:gravity="center"
-                android:background="@drawable/rounded_rectangle_boder_background"
-                android:text="Hello World!" />
-
-            <TextView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="10dp"
-                android:gravity="center"
-                android:background="@drawable/rounded_rectangle_left_top_boder_background"
-                android:text="Hello World!" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#FFF"
-                android:padding="5dp"
-                android:layout_marginTop="5dp"
-                android:textColor="#000"
-                android:textSize="12sp"
-                android:text="渐变背景"/>
-
-            <TextView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="10dp"
-                android:gravity="center"
-                android:background="@drawable/circle_gradient_background"
-                android:text="Hello World!" />
-
-            <TextView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="10dp"
-                android:gravity="center"
-                android:background="@drawable/circular_ring_gradient_background"
-                android:text="Hello World!" />
-
-            <TextView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="10dp"
-                android:gravity="center"
-                android:background="@drawable/rounded_rectangle_gradient_background"
-                android:text="Hello World!" />
-
-            <TextView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="10dp"
-                android:gravity="center"
-                android:background="@drawable/rounded_rectangle_left_top_gradient_background"
-                android:text="Hello World!" />
-
-        </LinearLayout>
-
-    </ScrollView>
-
-
-</FrameLayout>
+</LinearLayout>
